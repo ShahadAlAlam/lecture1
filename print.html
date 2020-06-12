@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <style>
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+            @media screen{
+              .print-only{
+                    display: none;
+              }
+
+            }
+        </style>
+    </head>
+    <body>
+        <p style=" color:red; " class="print-only">This is a printed version</p>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p class="screen-only">This paragraph won't appear when you print this page.</p>
+    </body>
+</html>
