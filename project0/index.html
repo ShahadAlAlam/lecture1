@@ -4,21 +4,59 @@
     <title>Project0 My webpage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        .row {
+          border-collapse: collapse;
+        }
         .row > div {
             padding: 20px;
-            background-color: teal;
+            background-color: lightblue;
             border: 2px solid black;
+            border-collapse: collapse;
+        }
+        ol li{
+          color: blue;
+        }
+        ol li:hover{
+          color: green;
+        }
+        .container div{
+          border-collapse: collapse;
         }
     </style>
   </head>
   <body>
         <div class="container">
-          <div class="raw">
+          <div class="row">
             <div class="col-3">
                 <img src="passport1.jpg" alt="shahad" width="225" height="282">
             </div>
-            <div class="col-3">
-              Shahad Al Alam
+            <div class="col">
+              <table>
+                <tr>
+                  <th>Name :</th> <td>Shahad Al Alam</td>
+                </tr>
+                <tr>
+                  <th>Project Details :</th> <td>This is project 0</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="row">
+              <div class="col">
+                <ol>
+                  <li>
+                    <a href="page1.html">Page One</a>
+                  </li>
+                  <li>
+                    <a href="page2.html">Page two</a>
+                  </li>
+                  <li>
+                    <a href="page3.html">Page three</a>
+                  </li>
+                </ol>
+              </div>
+
             </div>
           </div>
         </div>
