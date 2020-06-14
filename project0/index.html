@@ -4,59 +4,68 @@
     <title>Project0 My webpage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        .row {
-          border-collapse: collapse;
-        }
         .row > div {
             padding: 20px;
-            background-color: lightblue;
             border: 2px solid black;
             border-collapse: collapse;
-        }
-        ol li{
+          }
+        ol>li{
           color: blue;
         }
-        ol li:hover{
+        ol>li:hover{
           color: green;
+          font-weight: bolder;
         }
-        .container div{
-          border-collapse: collapse;
+        ul>li{
+          color: lightblue;
+        }
+        ul>li:hover{
+          color: lightgreen;
+          font-weight: bolder;
         }
     </style>
   </head>
   <body>
         <div class="container">
-          <div class="row">
+          <div class="row" style="background-image: linear-gradient(red, yellow);">
             <div class="col-3">
-                <img src="passport1.jpg" alt="shahad" width="225" height="282">
+                <img src="passport1.jpg" class="img-thumbnail" alt="shahad" max-width="200px" height="auto">
             </div>
             <div class="col">
-              <table>
+              <table class="table">
                 <tr>
-                  <th>Name :</th> <td>Shahad Al Alam</td>
+                  <th  scope="row">Name :</th> <td scope="col" style="color: white;">Shahad Al Alam</td>
                 </tr>
                 <tr>
-                  <th>Project Details :</th> <td>This is project 0</td>
+                  <th  scope="row">Details :</th> <td scope="col"><p>Senior Programmer Analyst (Tech Terrain IT)<br>
+                                                                  Current Residence: 2/7/1, Suite # A7, <br>
+                                                                                     Tolarbag Water Tank Road, <br>
+                                                                                     Tolarbag, Mirpur-1, <br>
+                                                                                     Dhaka 1216, Bangladesh <br>
+                                                                                     E-mail: shahad.aust@gmail.com, <br>
+                                                                                     Mob: +8801731121626</p></td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="Container">
-            <div class="row">
-              <div class="col">
+          <div class="row"  style="background-color: yellow;">
+            <div class="col">
                 <ol>
                   <li>
-                    <a href="page1.html">Page One</a>
+                    <a href="page1.html">Profile</a>
+                    <ul>
+                      <li>Career Objective</li>
+                      <li>Experiences</li>
+                      <li>Education</li>
+                    </ul>
                   </li>
                   <li>
-                    <a href="page2.html">Page two</a>
+                    <a href="page2.html">Key Skills</a>
                   </li>
                   <li>
-                    <a href="page3.html">Page three</a>
+                    <a href="page3.html">Referance Projects:</a>
                   </li>
                 </ol>
-              </div>
-
             </div>
           </div>
         </div>
